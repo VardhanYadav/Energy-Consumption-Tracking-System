@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack AI | Sustainable Energy Predictor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>EcoTrack</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#technology">AI Tech</a>
+            <a href="#predict">Predictor</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="btn btn-outline" id="login-btn">Login</button>
+            <button class="btn btn-primary" id="register-btn">Register</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1>Smart Energy Predictor</h1>
+            <p class="tagline">Our AI-powered system analyzes energy patterns to help you optimize consumption, reduce costs, and minimize your environmental impact.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="hero-predict-btn">
+                    <i class="fas fa-bolt"></i> Try Predictor
+                </button>
+                <button class="btn btn-outline" id="hero-learn-btn">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose EcoTrack?</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Our advanced algorithms analyze thousands of data points to understand your unique energy consumption patterns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainability Focus</h3>
+                    <p>Get recommendations that help reduce your carbon footprint while saving you money on energy bills.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-Time Insights</h3>
+                    <p>Monitor your energy usage with up-to-date analytics and personalized conservation strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Technology Section -->
+    <section id="technology" class="ai-tech-section">
+        <div class="container">
+            <h2 class="section-title">Our AI Technology</h2>
+            <div class="ai-tech-container">
+                <div class="ai-tech-text">
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                        EcoTrack AI uses cutting-edge machine learning techniques to analyze energy consumption patterns across different building types and usage scenarios. Our system goes beyond simple regression models to understand complex relationships between usage factors.
+                    </p>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                        The prediction engine combines multiple advanced approaches:
+                    </p>
+                    <ul class="tech-list">
+                        <li>Time-series forecasting with LSTM neural networks</li>
+                        <li>Feature importance analysis for key consumption drivers</li>
+                        <li>Anomaly detection to identify inefficiencies</li>
+                        <li>Hybrid models combining statistical and machine learning approaches</li>
+                    </ul>
+                    <p style="font-size: 1.1rem; margin-top: 1.5rem;">
+                        This comprehensive approach ensures you get the most accurate predictions and actionable recommendations.
+                    </p>
+                </div>
+                <div class="ai-tech-image">
+                    <div class="tech-visual">
+                        <i class="fas fa-chart-line tech-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction Section -->
+    <section id="predict" class="recommendation-section">
+        <div class="container">
+            <h2 class="section-title">Energy Consumption Predictor</h2>
+            <div class="gradio-container">
+                <iframe src="https://471f0c41484748651d.gradio.live" style="width: 100%; height: 600px; border: none; border-radius: 12px;"></iframe>
+                <button class="fullscreen-btn" id="fullscreen-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-screen Gradio Container -->
+    <div class="gradio-fullscreen" id="gradio-fullscreen">
+        <span class="close-fullscreen" id="close-fullscreen">&times;</span>
+        <iframe class="gradio-iframe" src="https://471f0c41484748651d.gradio.live"></iframe>
+    </div>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-members">
+                <div class="team-card">
+                    <img src="Apoorv.jpg" alt="Team Member" class="team-img">
+                    <h3>Apoorv Khanna</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/apoorv468?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Apoorvkhanna2"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="Vardhan.jpg" alt="Team Member" class="team-img">
+                    <h3>Vardhan Yadav</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/vardhan-yadav-58498324a/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/VardhanYadav"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="mihir.jpg" alt="Team Member" class="team-img">
+                    <h3>Mihir Vallala</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>EcoTrack</h3>
+                    <p style="margin-top: 1rem; color: var(--text-secondary);">AI-powered energy predictions that help you save money and reduce environmental impact.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#technology">AI Tech</a></li>
+                        <li><a href="#predict">Predictor</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" id="privacy-link">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-link">Terms of Service</a></li>
+                        <li><a href="#" id="tip-link">Energy Saving Tips</a></li>
+                        <li><a href="#">Sustainability Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p style="color: var(--text-secondary);">Subscribe for updates on energy efficiency and sustainability.</p>
+                    <form id="newsletter-form" style="margin-top: 1rem; display: flex;">
+                        <input type="email" placeholder="Your email" style="flex: 1; padding: 0.6rem; border-radius: 4px 0 0 4px; border: none; background: rgba(255,255,255,0.1); color: white;">
+                        <button type="submit" style="background: var(--primary); color: white; border: none; padding: 0 1rem; border-radius: 0 4px 4px 0; cursor: pointer;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 EcoTrack AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to EcoTrack</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="form-submit">Login</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" id="switch-to-register">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">Confirm Password</label>
+                    <input type="password" id="register-confirm" required>
+                </div>
+                <button type="submit" class="form-submit">Register</button>
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal privacy-modal" id="privacy-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Privacy Policy</h2>
+            <h3>1. Information We Collect</h3>
+            <p>We collect information to provide better services to all our users. The types of information we collect include:</p>
+            <ul>
+                <li>Information you provide, such as your name, email address, and energy usage data</li>
+                <li>Information about your use of our services, such as the predictions you request</li>
+                <li>Device information, including hardware model, operating system version, and mobile network information</li>
+            </ul>
+
+            <h3>2. How We Use Information</h3>
+            <p>We use the information we collect to:</p>
+            <ul>
+                <li>Provide, maintain, and improve our services</li>
+                <li>Develop new features and functionality</li>
+                <li>Personalize your energy predictions</li>
+                <li>Understand how users interact with our service to improve quality</li>
+            </ul>
+
+            <h3>3. Information Sharing</h3>
+            <p>We do not share personal information with companies, organizations, or individuals outside of EcoTrack except in the following cases:</p>
+            <ul>
+                <li>With your consent</li>
+                <li>For external processing by our trusted service providers</li>
+                <li>For legal reasons when necessary</li>
+            </ul>
+
+            <h3>4. Security</h3>
+            <p>We work hard to protect our users from unauthorized access to or unauthorized alteration, disclosure, or destruction of information we hold. We implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk.</p>
+
+            <h3>5. Changes to This Policy</h3>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "effective date" at the top of this Privacy Policy.</p>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div class="modal privacy-modal" id="terms-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Terms of Service</h2>
+            <h3>1. Acceptance of Terms</h3>
+            <p>By accessing or using the EcoTrack service, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service.</p>
+
+            <h3>2. Description of Service</h3>
+            <p>EcoTrack provides personalized energy consumption predictions based on artificial intelligence and machine learning algorithms. The service may change from time to time without prior notice.</p>
+
+            <h3>3. User Responsibilities</h3>
+            <p>As a user of EcoTrack, you agree to:</p>
+            <ul>
+                <li>Provide accurate and complete registration information</li>
+                <li>Maintain the confidentiality of your account credentials</li>
+                <li>Use the service only for lawful purposes</li>
+                <li>Not attempt to interfere with or disrupt the service</li>
+            </ul>
+
+            <h3>4. Intellectual Property</h3>
+            <p>All content included on the EcoTrack service, such as text, graphics, logos, and software, is the property of EcoTrack or its content suppliers and protected by intellectual property laws.</p>
+
+            <h3>5. Limitation of Liability</h3>
+            <p>EcoTrack shall not be liable for any indirect, incidental, special, consequential or punitive damages resulting from your use of or inability to use the service.</p>
+
+            <h3>6. Changes to Terms</h3>
+            <p>We reserve the right to modify these terms at any time. Your continued use of the service after such changes constitutes your acceptance of the new terms.</p>
+
+            <h3>7. Governing Law</h3>
+            <p>These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which our company is established.</p>
+        </div>
+    </div>
+
+    <div class="modal privacy-modal" id="tips-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Energy Saving Tips</h2>
+            <h3>1. General Tips</h3>
+            <p>We provides tips to enhance better services to all our users. The types of information we provide include:</p>
+            <ul><li>General Tips</li></ul>
+            <ul>
+                <li>Switch to LED lighting which uses 75% less energy.</li>
+                <li>Install smart thermostats to optimize heating/cooling</li>
+                <li>Use natural ventilation when possible</li>
+            </ul>
+
+            <h3>2. Residential Specific Tips</h3>
+            <p>We use the information we provide to enhance user experience</p>
+            <ul>
+                <li>Air dry clothes instead of using a dryer</li>
+                <li>Use microwave instead of oven for small meals</li>
+                <li>Personalize your energy predictions</li>
+                <li>Plant shade trees near windows to reduce cooling needs</li>
+            </ul>
+
+            <h3>3. Additional Recommendations</h3>
+            <p>We do not share personal information with companies, organizations, or individuals outside of EcoTrack except in the following cases:</p>
+            <ul>
+                <li>Maintain your current good practices</li>
+                <li>Monitor usage patterns for further optimization</li>
+                <li>Educate occupants about energy conservation</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
